@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlms="https://www.thymeleaf.org" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Clientes</title>
+
+</head>
+
+<h1>Detalle del Cliente</h1>
+
+
+<body>
+
+<nav class="navbar navbar-expand-sm bg-light" th:fragment="BarraNavegacion1">
+    <div class="logo">
+        <img th:src="@{/img/eoilogo.png}">
+    </div>
+    <div class="cointainer fluid">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="list-style: none">
+                <div class="menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <li class="navbar-item"><a class="btn btn-primary active" th:href="@{/}" >Home</a>
+                                </li>
+                            </div>
+                            <div class="col-md-3">
+                                <li class="navbar-item"><a class="btn btn-primary" th:href="@{/}">Quienes
+                                    somos</a></li>
+                            </div>
+                            <div class="col-md-3">
+                                <li class="navbar-item"><a class="btn btn-primary" th:href="@{/}">Contacto</a>
+                                </li>
+                            </div>
+                            <div class="col-md-3">
+                                <li class="services">
+                                    <a class="btn btn-primary active" data-bs-toggle="dropdown" th:href="@{/}">Personas</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="btn btn-primary dropdown-item" th:href="@{/Person}">Tarjeta Personas
+                                            </a></li>
+                                        <li><a class="btn btn-primary dropdown-item" th:href="@{/Person}">Datos Personas
+                                          </a></li>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+</nav>
+
+<article>
+    <section>
+        <footer>
+
+        </footer>
+
+</body>
+</html>
